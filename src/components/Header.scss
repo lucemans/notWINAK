@@ -1,0 +1,90 @@
+.header {
+    width: 100vw;
+    // background: #eb8323;
+    background: #ff7b00;
+    color: white;
+    font-size: 1rem;
+    > .inner {
+        width: 1300px;
+        max-height: 116px;
+        padding: 0 1rem;
+        position: relative;
+        .login {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: #666;
+            margin-right: 1rem;
+            padding: 0.2rem 0.5rem;
+            font-size: 0.9rem;
+            cursor: pointer;
+            .icon {
+                width: 0.9rem;
+                height: 0.9rem;
+                background: #333;
+                margin-right: 0.4rem;
+            }
+            img {
+                margin-left: 2rem;
+            }
+        }
+        .boven {
+            margin-top: 1rem;
+            .logo_container {
+                height: 3rem;
+                .logo {
+                    width: 3rem;
+                    position: relative;
+                    img {
+                        width: 3rem;
+                        height: 3rem;
+                    }
+                    .inside {
+                        width: 3rem;
+                        height: 3rem;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        border-radius: 50%;
+                        box-shadow: 0 0 8px 0 rgb(255 255 255 / 22%)
+                    }
+                }
+                .right {
+                    margin-left: 1rem;
+                    padding: 0.1rem 0;
+                    justify-content: center;
+                    height: 100%;
+                    overflow: visible;
+                    .title {
+                        font-size: 1.6rem;
+                        line-height: 1.6rem;
+                        font-weight: 800;
+                        overflow: visible;
+                    }
+                    .subtitle {
+                        line-height: 0.9rem;
+                        font-size: 0.9rem;
+                        overflow: visible;
+                    }
+                }
+            }
+        }
+        .nav {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            .nav-item {
+                padding: 0 4rem 0 0;
+                user-select: none;
+                font-size: 0.9rem;
+                &.selected, &:hover {
+                    cursor: pointer;
+                    span {
+                        font-weight: 600;
+                        display: inline-block;
+                        border-bottom: 1px solid white;
+                    }
+                }
+            }
+        }
+    }
+}
